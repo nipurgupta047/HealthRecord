@@ -1,0 +1,33 @@
+<%- include("partials/header") -%>
+
+<h2>Add you Health Update</h2>
+<br />
+<form class="" action="/compose" method="post">
+  <div class="form-group">
+    <div class="mb-3">
+     <label for="exampleInputEmail1" class="form-label">Date</label>
+     <input name="date" type="date" class="form-control" id="exampleInputEmail1">
+    </div>
+
+    <div class="mb-3">
+     <label for="exampleInputEmail1" class="form-label">Title</label>
+     <input name="postTitle" type="text" class="form-control" id="exampleInputEmail1">
+    </div>
+
+    <div class="mb-3">
+     <label for="exampleInputEmail1" class="form-label">Description</label>
+     <textarea name="postBody" class="form-control" rows="4" cols="80"></textarea>
+    </div>
+
+    <div class="mb-3">
+     <label for="exampleInputEmail1" class="form-label">Medicine Record</label>
+     <textarea name="medicine" class="form-control" rows="4" cols="80"></textarea>
+    </div>
+
+  </div>
+
+  <button type="submit" class="btn btn-primary">Add</button>
+</form>
+
+
+<%- include("partials/footer") -%>

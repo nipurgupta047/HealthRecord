@@ -1,0 +1,11 @@
+<%- include("partials/header") -%>
+
+<h3>- <%= post.title %> </h3>
+<h5> <%= post.date %> </h5>
+<br />
+<h4><u>Description</u> : </h4>
+<p class = "postDescription"><%=post.content %> </p>
+<br />
+<h4><u>Medicines</u> : </h4>
+<p class = "postMedicine"><%=post.medicine %> </p>
+<%- include("partials/footer") -%>
